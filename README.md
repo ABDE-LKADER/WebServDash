@@ -67,7 +67,7 @@ WebServer/               # Main C++ Project
 
 ---
 
-##🧪 Testing GuideOnce the server is running and this repo is linked:
+### 🧪 Testing GuideOnce the server is running and this repo is linked:
 
 1. **Dashboard:** Navigate to `http://localhost:PORT/` to view the UI.
 2. **CGI Python:** Navigate to `http://localhost:PORT/bin/script.py` to test Python execution.

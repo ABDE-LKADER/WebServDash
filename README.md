@@ -39,7 +39,7 @@ make repo
 
 ```
 
-###Manual InstallationIf you need to download this repository standalone for inspection:
+### Manual InstallationIf you need to download this repository standalone for inspection:
 
 ```bash
 git clone git clone https://github.com/ABDE-LKADER/WebServDash.git
@@ -48,22 +48,21 @@ git clone git clone https://github.com/ABDE-LKADER/WebServDash.git
 
 ---
 
-##📁 Suggested Directory StructureWhen cloned into the main project, the structure usually looks like this:
+### 📁 Suggested Directory StructureWhen cloned into the main project, the structure usually looks like this:
 
 ```text
 WebServer/               # Main C++ Project
 ├── src/                 # Server Source Code
-├── includes/            # Header Files
+├── conf/                # The Server Configuration 
+├                               ...
 ├── Makefile
-└── WebServDash/         # This Repository
-    ├── index.html       # Dashboard Entry
-    ├── assets/          # CSS, JS, Images
-    ├── uploads/         # Target folder for POST uploads
-    └── cgi-bin/         # Server-side scripts
-        ├── test.py
-        ├── hello.php
-        └── status.sh
-
+├                        # This Repository
+├── www/                 # CSS, JS, Images
+├── errors/              # Static Error Pages
+└── bin/                 # Server-side scripts
+    ├── script.py
+    ├── script.php
+    └── script.sh
 ```
 
 ---
@@ -71,8 +70,8 @@ WebServer/               # Main C++ Project
 ##🧪 Testing GuideOnce the server is running and this repo is linked:
 
 1. **Dashboard:** Navigate to `http://localhost:PORT/` to view the UI.
-2. **CGI Python:** Navigate to `http://localhost:PORT/cgi-bin/test.py` to test Python execution.
-3. **CGI PHP:** Navigate to `http://localhost:PORT/cgi-bin/hello.php` to test PHP parsing.
+2. **CGI Python:** Navigate to `http://localhost:PORT/bin/script.py` to test Python execution.
+3. **CGI PHP:** Navigate to `http://localhost:PORT/bin/script.php` to test PHP parsing.
 4. **Uploads:** Use the Dashboard form to upload a file and verify it appears in the `uploads/` directory.
 
 ---

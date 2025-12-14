@@ -34,9 +34,6 @@ If you are running the main WebServer, this repository should be fetched automat
 
 ```bash
 make
-# or specifically
-make repo
-
 ```
 
 ### Manual InstallationIf you need to download this repository standalone for inspection:
